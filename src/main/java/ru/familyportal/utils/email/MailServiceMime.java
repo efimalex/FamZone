@@ -35,6 +35,8 @@ public class MailServiceMime implements MailServiceInt, Runnable{
 
     public void run() {
 
-
+    /*
+    this is a comment
+     */
     }
 }
