@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64400024-00ee-4a3d-98e3-d0c5667a00ce" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Application\FamZone\Docs\ООП.doc" afterPath="" />
-      <change type="DELETED" beforePath="D:\Application\FamZone\Docs\Описанте.doc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity-config.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity-config.xml" />
     </list>
     <list id="489a587a-210f-447c-b814-92bc4a307bd9" name="New changelist" comment="New changelist" />
     <list id="3d21c954-feb6-4989-80bd-4f7ae37ad8e3" name="Failed commit: Default" comment="New changelist" />
@@ -68,14 +67,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MailServiceMime.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MailServiceMime.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/familyportal/utils/email/MailServiceMime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="51" selection-start="564" selection-end="564" vertical-scroll-proportion="0.12014788">
+            <state line="18" column="51" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-Dao.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ru/familyportal/model/dao/applicationContext-Dao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="82" selection-start="1059" selection-end="1059" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="velocity-config.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity-config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="134" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.75614756">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -140,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/ru/familyportal/utils/email/emailHelpers/EmailTemplateWraper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/familyportal/utils/email/emailHelpers/EmailTemplateParamsWraper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/familyportal/utils/email/emailTemplate/AbstractMailTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/familyportal/utils/email/emailTemplate/ActivationAccountInformationTemplate.java" />
@@ -156,6 +178,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/familyportal/service/transactional/UserServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/familyportal/service/transactional/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/familyportal/utils/email/MailServiceMime.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity-config.xml" />
       </list>
     </option>
   </component>
@@ -2153,6 +2176,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.49590164" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38477367" sideWeight="0.5255973" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46245733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5324232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2167,14 +2191,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46502057" sideWeight="0.2662116" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29012346" sideWeight="0.46075085" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32786885" sideWeight="0.67235494" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5085324" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32786885" sideWeight="0.4795222" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52047783" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Properties" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.49674267" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46245733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2272,14 +2295,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ru/familyportal/model/dao/applicationContext-Dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="82" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/3.1.2.RELEASE/spring-context-support-3.1.2.RELEASE-sources.jar!/org/springframework/mail/SimpleMailMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="13" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.14015152" />
@@ -2337,11 +2352,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/familyportal/utils/email/MailServiceMime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="51" selection-start="564" selection-end="564" vertical-scroll-proportion="0.12014788">
+        <state line="18" column="51" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/email-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.17553191">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ru/familyportal/model/dao/applicationContext-Dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="82" selection-start="1059" selection-end="1059" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="134" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.75614756">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
       </provider>
     </entry>
   </component>

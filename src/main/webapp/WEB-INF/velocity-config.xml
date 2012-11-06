@@ -21,5 +21,5 @@
 
     </bean>
 
-    <bean id="activationMailTemplate" class="ru.familyportal.utils.email.emailTemplate.ActivationAccountInformationTemplate"/>
+   <!-- <bean id="activationMailTemplate" class="ru.familyportal.utils.email.emailTemplate.ActivationAccountInformationTemplate"/> -->
 </beans>
