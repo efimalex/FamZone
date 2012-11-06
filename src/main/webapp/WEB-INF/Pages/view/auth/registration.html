@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+    <link rel=" stylesheet" type="text/css" href="/resources/css/loginForm.css"/>
+</head>
+
+<body>
+<div id="register">
+    <form id="registerForm" method="post" action="" autocomplete="on" th:object="${currentUser}">
+        <h1> Registration </h1>
+        <p>
+            <label for="usernamesignup" class="uname" data-icon="u">Имя пользователя</label>
+            <input id="usernamesignup"  name="userName" required="required" type="text" placeholder="mysuperusername690" />
+        </p>
+        <p>
+            <label for="emailsignup" class="youmail" data-icon="e" >E-mail</label>
+            <input id="emailsignup" name="email" required="required" type="email" placeholder="mysupermail@mail.com"/>
+        </p>
+        <p>
+            <label for="lastnamesignup" class="uname" data-icon="u">Фамилия</label>
+            <input id="lastnamesignup" name="lastName" required="required" type="text" placeholder="" />
+        </p>
+        <p>
+            <label for="firstnamesignup" class="uname" data-icon="u">Имя</label>
+            <input id="firstnamesignup" name="firstName" required="required" type="text" placeholder="" />
+        </p>
+
+        <p class="signin button">
+            <input type="submit" id="toSelLpu" value="Sign up"/>
+        </p>
+        <p class="change_link">
+            Already a member ?
+            <a href="#tologin" class="to_register"> Go and log in </a>
+        </p>
+
+
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                    http://www.springframework.org/schema/security
+                    http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+    <beans:bean id="userDetailsService" class="ru.familyportal.service.transactional.UserServiceImpl">
+
+    </beans:bean>
+
+    <global-method-security secured-annotations="enabled"/>
+
+
+
+    <http pattern="/resources/**" security="none"/>
+    <!--<http pattern="/register-flow/sigIn" security="none"/> -->
+    <!--<http pattern="/portal/javax.faces.resource/**" security="none"/>-->
+    <http auto-config="true" use-expressions="true">
+        <!--<intercept-url pattern="/resources/**/*"  access="permitAll"/> -->
+        <intercept-url pattern="/**/*" access="permitAll"/>
+        <intercept-url pattern="/sss/*" access="permitAll"/>
+        <intercept-url pattern="/login" access="permitAll"/>
+        <intercept-url pattern="/register/registr" access="permitAll"/>
+        <intercept-url pattern="/register/selLpu" access="permitAll"/>
+        <intercept-url pattern="/register/selectLpu" access="permitAll"/>
+        <intercept-url pattern="/register/addPhoto" access="permitAll"/>
+       <!-- <intercept-url pattern="/**" access="denyAll"/> -->
+        <form-login login-page="/login"/>
+        <!--<remember-me key="JSFUserMgmtExample"/> -->
+        <!--<form-login login-processing-url="/j_spring_security_check" login-page="/index.jsf" default-target-url="/index.jsf"/> -->
+        <!--<logout logout-url="/logout.jsp" logout-success-url="/index.jsf"/> -->
+    </http>
+
+
+    <!-- <http use-expressions="true">
+       <intercept-url pattern="/**" access="permitAll"/>
+       <form-login />
+       <http-basic />
+       <logout />
+   </http> -->
+
+    <beans:bean id="encoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+
+    <beans:bean id="daoAuthenticationProvider"
+                class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
+        <beans:property name="userDetailsService" ref="userDetailsService"/>
+        <beans:property name="passwordEncoder" ref="encoder"/>
+    </beans:bean>
+
+    <!-- <beans:bean id="authenticationManager"
+               class="org.springframework.security.authentication.ProviderManager">
+       <beans:property name="providers">
+           <beans:list>
+               <beans:ref local="daoAuthenticationProvider"/>
+           </beans:list>
+       </beans:property>
+   </beans:bean> -->
+
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider user-service-ref="userDetailsService">
+            <password-encoder ref="encoder">
+            </password-encoder>
+
+        </authentication-provider>
+    </authentication-manager>
+
+
+</beans:beans>

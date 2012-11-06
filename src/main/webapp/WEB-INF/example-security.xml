@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security" 
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+             http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-2.0.1.xsd">
+  <beans:bean id="userDetailsService" class="org.springframework.security.userdetails.jdbc.JdbcDaoImpl">
+    <beans:property name="dataSource" ref="jdbcDs"/>
+    <beans:property name="usersByUsernameQuery">
+      <beans:value>SELECT userName, password, active from ex_user where userName=?</beans:value>
+    </beans:property>
+    <beans:property name="authoritiesByUsernameQuery">
+      <beans:value>SELECT ij.userId, r.name FROM ex_role r INNER JOIN (SELECT u.userId, ur.roleId FROM ex_user_role ur, ex_user u WHERE ur.userId=u.userId AND u.userName=?) ij ON r.roleId=ij.roleId</beans:value>
+    </beans:property>
+  </beans:bean>
+  <global-method-security secured-annotations="enabled"> </global-method-security>
+  <http auto-config="true" access-denied-page="/index.jsf">
+    <remember-me key="JSFUserMgmtExample"/>
+    <form-login login-processing-url="/j_spring_security_check" login-page="/index.jsf" default-target-url="/index.jsf"/>
+    <logout logout-url="/logout.jsp" logout-success-url="/index.jsf"/>
+  </http>
+  <beans:bean id="loggerListener" class="org.springframework.security.event.authentication.LoggerListener"/>
+  <authentication-provider user-service-ref="userDetailsService">
+    <password-encoder hash="md5"/>
+  </authentication-provider>
+</beans:beans>

@@ -1,0 +1,152 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-size: 12px;
+    margin: 0px;
+}
+
+a img {
+    border: none;
+}
+
+#pageredbar {
+    height: 87px;
+    background-color: red;
+}
+
+#logoFormMain {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+
+#loginPanel {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e6fa;
+}
+
+#loginSide {
+    width: 150px;
+    background-color: #fffaf0;
+    color: black;
+    font: 15px tahoma, verdana, arial;
+}
+
+#sidebar {
+    float: left;
+    width: 20%;
+    margin-left: -100%;
+    position: fixed;
+}
+
+.rf-pm-gr {
+background-color: red;
+}
+
+.rich-message-marker img {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rich-message-label {
+    font: 11px tahoma, verdana, arial;
+    color: red;
+    padding-left: 5px;
+}
+
+.rich-messages-marker img {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rich-messages-label {
+    font: 11px tahoma, verdana, arial;
+    color: red;
+    padding-left: 5px;
+}
+
+.catalogNode {
+    font: 11px tahoma, verdana, arial;
+}
+
+.col0 {
+    font: 11px tahoma, verdana, arial;
+}
+
+.col1 {
+    font: 11px tahoma, verdana, arial;
+}
+
+.col2 {
+    font: 11px tahoma, verdana, arial;
+}
+
+.loginFooter {
+    font: 11px tahoma, verdana, arial;
+    text-align: center;
+}
+
+.regFooter {
+    font: 11px tahoma, verdana, arial;
+    text-align: center;
+}
+
+.authHeader {
+    font: 11px tahoma, verdana, arial;
+    text-align: left;
+}
+
+.tooltip {
+    border-width: 2px;
+    padding: 5px;
+}
+
+.tooltip-text {
+    width: 350px;
+    height: 80px;
+    cursor: arrow;
+    border-width: 2px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.barsearch {
+    height: 17px;
+    width: 200px;
+}
+
+.prefFooter {
+    font: 11px tahoma, verdana, arial;
+    text-align: left;
+}
+
+.mainCanvas {
+    vertical-align: top;
+    width: 980px;
+    height: 600px;
+}
+
+.canvasHdr {
+    padding: 4px;
+}
+
+.rich-inplace-select-list-decoration {
+    background-color: #ecf4fe;
+    font: 11px tahoma, verdana, arial;
+}
+
+.toolbarLink {
+    font: 12px tahoma, verdana, arial;
+    text-align: left;
+    text-decoration: none;
+}
+
+.infoLabel {
+    font: 11px tahoma, verdana, arial;
+    color: #336600;
+    padding-left: 5px;
+}
